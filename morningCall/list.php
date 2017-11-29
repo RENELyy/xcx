@@ -1,7 +1,7 @@
 <?php
 include ("coon.php");
 $number = $_GET['number'];
-$no = $number;
+$no = $number + 10;
 $sql = "select * from `content` order by `id` desc limit 0,{$no}";
 $result = mysqli_query($link,$sql);
 if (mysqli_num_rows($result) > 0) {
