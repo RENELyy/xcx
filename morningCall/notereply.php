@@ -4,7 +4,7 @@ $sql = "select * from `reply`";
 $result = mysqli_query($link,$sql);
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-        $output[] = array('id' => 1,'nickName' => $row['nickName'],'name' => $row['name'],'content' => $row['content'],'todaytime' => $row['todaytime'],'view' => $row['view']);
+        $output[] = array('replynickName' => $row['nickName'],'replyname' => $row['name'],'replycontent' => $row['content'],'replytodaytime' => $row['todaytime'],'replyview' => $row['view']);
     }
 }
 print_r(json_encode($output));
