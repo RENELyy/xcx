@@ -11,6 +11,7 @@ $content = $_GET['content'];
 $imageUrl = $_GET['imageUrl'];
 $todaydate = $_GET['todaydate'];
 $todaytime = $_GET['todaytime'];
-$sql = "insert into `content`(nickName,content,imageUrl,todaydate,todaytime) VALUES ('{$nickName}','{$content}','{$imageUrl}','{$todaydate}','{$todaytime}')";
+$Pid = $_GET['Pid'];
+$sql = "insert into `content`(nickName,content,imageUrl,todaydate,todaytime,Pid) VALUES ('{$nickName}','{$content}','{$imageUrl}','{$todaydate}','{$todaytime}','{$Pid}')";
 mysqli_query($link,$sql);
 ?>
