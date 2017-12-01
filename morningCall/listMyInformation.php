@@ -4,7 +4,7 @@ include("coon.php");
 $sql = "select * from `user`";
 //$query = mysql_query($sql);
 //while($rs = mysql_fetch_array($query)){
-//	$output[] = array('nickName'=>$rs['nickName'],'img'=>$rs['img']);
+//	$output[] = array('nickName'=>$rs['nickName'],'img'=>$rs['img'],'tel' => $rs['tel']);
 //}
 $result = mysqli_query($link, $sql);
 if (mysqli_num_rows($result) > 0) {
